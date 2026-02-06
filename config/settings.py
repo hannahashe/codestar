@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 import os
 from pathlib import Path
-import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -91,7 +90,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # }
 
 DATABASES = {
-    'default': 
+    'default':
     dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
